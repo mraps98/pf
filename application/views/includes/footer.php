@@ -21,14 +21,12 @@
 
 
 
-    <script type='text/javascript' src="<?php echo base_url();?>assets/jquery.js"></script>
-    <script type='text/javascript' src="<?php echo base_url();?>assets/popper.js"></script>
-    <script type='text/javascript' src="<?php echo base_url();?>assets/bootstrap.js"></script>
-    <script type='text/javascript' src="<?php echo base_url();?>assets/datatables.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="<?php echo base_url();?>assets/jquery-easing.js"></script>
-    <!-- SB ADMIn JavaScript-->
-    <script src="<?php echo base_url();?>assets/sb-admin.js"></script>
+    <script>
+      // Call the dataTables jQuery plugin
+      $(document).ready(function() {
+        $('#dataTable').DataTable();
+      });
+    </script>
 </body>
 </html>

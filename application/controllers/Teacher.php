@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Student extends CI_Controller {
+class Teacher extends CI_Controller {
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,12 +20,12 @@ class Student extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		$this->load->model('Student_Model');
+		$this->load->model('Teacher_Model');
 	}
 
 	public function index()
 	{
-		$data['students'] = $this->Student_Model->getStudents();
-		$this->load->view('student/index.php',$data);
+		$data['teachers'] = $this->Teacher_Model->getTeachers();
+		$this->load->view('teacher/index.php',$data);
 	}
 }

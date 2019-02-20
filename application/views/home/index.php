@@ -7,7 +7,12 @@ $this->load->view('includes/side-bar.php');
 $this->load->view('includes/top-bar.php');
 
 ?>
-
+<script type='text/javascript' defer='defer'>
+$(document).ready(function(){
+    $('.nav-item').removeClass('active');
+    $('#menu-dashboard').addClass('active');
+});
+</script>
 <!-- Begin Page Content -->
         <div class="container-fluid">
 
